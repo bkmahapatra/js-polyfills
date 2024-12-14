@@ -34,3 +34,19 @@ const result = demoArr.map(function (number) {
 }, multiplier);
 
 console.log(result); // Output: [2, 4, 6]
+
+const ob = {
+  a: 10,
+  b: 40,
+  mz: function () {
+    return "HI";
+  },
+};
+const ar = [2, 5, 8];
+const obAr = [{ x: 10 }, { y: 20 }];
+
+console.log(ar.hasOwnProperty("1"));
+console.log(1 in ar);
+
+const numObj = { 0: "a", 1: "b", 2: "c", length: 3 }; // length important
+console.log(Array.prototype.map.call(numObj, (item) => item.toUpperCase()));
