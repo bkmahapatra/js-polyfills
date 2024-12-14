@@ -20,8 +20,11 @@ function customFind(callBack, thisArg) {
       return array[i];
     }
   }
+
+  return undefined;
 }
 
-Array.prototype.cFind = customFind;
+module.exports = { customFind };
+// Array.prototype.cFind = customFind;
 // console.log(array1.cFind((element) => element > 10));
 // console.log(array1.cFind(function(element) { return element > this.x}, { x: 100 }));
